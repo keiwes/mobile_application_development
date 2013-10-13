@@ -2,6 +2,7 @@ package com.wesleyreisz.teaching.android.class4.notetaker;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -52,6 +53,8 @@ public class ListNotesActivity extends Activity {
 		notes.add(new Note("Note 3", "Super Special Note 3 Details", new Date()));
 		notes.add(new Note("Note 4", "Super Special Note 4 Details", new Date()));
 		notes.add(new Note("Note 5", "Super Special Note 5 Details", new Date()));
+		
+		Collections.reverse(notes);
 		
 		populateList();
 	}
